@@ -1,5 +1,7 @@
 import discord
 import random
+from boto.s3.connection import S3Connection
+TOKEN = S3Connection(os.environ['TOKEN'])
 playing=False
 guessing=False
 replay=False
@@ -98,4 +100,4 @@ async def on_message(message):
 
  
 
-client.run("ODQ1MjU3OTEyNzkxMzM0OTMy.YKeVxg.UnbADN5zczgDaPmZAPDt-FbnLZ4")
+client.run(TOKEN)
