@@ -1,7 +1,5 @@
 import discord
 import random
-from keep_alive import keep_alive
-keep_alive()
 playing=False
 guessing=False
 replay=False
